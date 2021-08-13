@@ -1,0 +1,27 @@
+- class_name: 友情鏈接
+  # class_desc: 那些人，那些事
+  link_list:
+    - name: JerryC
+      link: https://jerryc.me/
+      avatar: https://jerryc.me/image/avatar.png
+      descr: 今日事,今日毕
+    - name: Ryan
+      link: https://bupt404.cn/
+      avatar: http://bupt404.cn/img/logo.jpg
+      descr: 亦师亦友
+    - name: LouisLu
+      link: https://www.louislu.top/
+      # avatar: http://bupt404.cn/img/logo.jpg
+      descr: 亦师亦友
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网络框架
+
+- class_name: 网站
+  # class_desc: 值得推荐的网站
+  link_list:
+    - name: 北京邮电大学
+      link: https://www.bupt.edu.cn/
+      avatar: http://www.bupt.edu.cn/__local/1/F4/62/05815E603799A29D53DDB1E0FAF_557A7220_102AD.png
+      descr: 著名211院校
