@@ -1,10 +1,10 @@
-- class_name: 友情鏈接
+- class_name: 友情链接
   # class_desc: 那些人，那些事
   link_list:
     - name: JerryC
       link: https://jerryc.me/
       avatar: https://jerryc.me/image/avatar.png
-      descr: 今日事,今日毕
+      descr: Hexo butterfly 主题的开发者
     - name: Ryan
       link: https://bupt404.cn/
       avatar: http://bupt404.cn/img/logo.jpg
