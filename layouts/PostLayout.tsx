@@ -42,34 +42,37 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             <div>
               <PageTitle>{title}</PageTitle>
             </div>
-            <dl className="space-y-2">
-              <ul className="flex flex-wrap justify-center gap-4 sm:space-x-12">
+            <div className="flex items-center justify-center space-x-5">
+              <dl>
+                <dt className="sr-only">Published on</dt>
+                <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <time dateTime={date}>
+                    {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                  </time>
+                </dd>
+              </dl>
+              <div className="flex items-center gap-2 space-x-">
                 by
-                {authorDetails.map((author) => (
-                  <li className="flex items-center space-x-2" key={author.name}>
-                    {author.avatar && (
-                      <Image
-                        src={author.avatar}
-                        width={20}
-                        height={20}
-                        alt="avatar"
-                        className="h-5 w-5 rounded-full"
-                      />
-                    )}
-                    <dt className="sr-only">Name</dt>
-                    <dd className="text-base font-medium leading-6 text-gray-900 dark:text-gray-100">
-                      {author.name}
-                    </dd>
-                  </li>
-                ))}
-              </ul>
-              <dt className="sr-only">Published on</dt>
-              <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                <time dateTime={date}>
-                  {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                </time>
-              </dd>
-            </dl>
+                <ul className="flex flex-wrap">
+                  {authorDetails.map((author) => (
+                    <li className="flex items-center space-x-2" key={author.name}>
+                      {author.avatar && (
+                        <Image
+                          src={author.avatar}
+                          width={20}
+                          height={20}
+                          alt="avatar"
+                          className="h-5 w-5 rounded-full"
+                        />
+                      )}
+                      <span className="text-base font-medium leading-6 text-gray-900 dark:text-gray-100">
+                        {author.name}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </header>
         <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 ">
@@ -83,7 +86,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
           </div>
           <footer>
             <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700">
-              {tags && (
+              {tags && tags.length > 0 && (
                 <div className="py-4">
                   <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                     Tags
