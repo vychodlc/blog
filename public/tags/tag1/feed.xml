@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>这个世界会好的</title>
+      <link>https://vychod.site/blog</link>
+      <description>Every heart hides a Terabithia.</description>
+      <language>zh-cn</language>
+      <managingEditor>vychodlc@gmail.com (Vychod)</managingEditor>
+      <webMaster>vychodlc@gmail.com (Vychod)</webMaster>
+      <lastBuildDate>Sun, 09 Nov 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://vychod.site/tags/tag1/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://vychod.site/blog/测试带tag的文章2</guid>
+    <title>测试带tag的文章2</title>
+    <link>https://vychod.site/blog/测试带tag的文章2</link>
+    <description>33</description>
+    <pubDate>Sun, 09 Nov 2025 00:00:00 GMT</pubDate>
+    <author>vychodlc@gmail.com (Vychod)</author>
+    <category>tag1</category>
+  </item>
+
+    </channel>
+  </rss>
