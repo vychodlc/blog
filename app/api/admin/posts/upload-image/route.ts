@@ -3,13 +3,13 @@ import path from 'path'
 import { NextResponse } from 'next/server'
 
 // 禁用默认的 body 解析，因为我们处理的是 FormData
-export const config = {
+const config = {
   api: {
     bodyParser: false,
   },
 }
 
-export async function POST(request: Request) {
+async function POST(request: Request) {
   try {
     // 获取上传的文件
     const formData = await request.formData()
@@ -78,4 +78,9 @@ export async function POST(request: Request) {
     console.error('图片上传失败:', error)
     return NextResponse.json({ error: '图片上传失败' }, { status: 500 })
   }
+}
+
+export {
+  POST,
+  config,
 }
