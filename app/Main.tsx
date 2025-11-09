@@ -10,7 +10,7 @@ export default function Home({ posts }) {
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+        <div className="space-y-2 pb-6 pt-6 md:space-y-5">
           <Hero />
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             Latest Writing

@@ -13,7 +13,7 @@ export default function AvatarLayout({ children, content }: Props) {
 
   return (
     <>
-      <div className="flex flex-col items-center space-x-2">
+      <div className="flex flex-col items-center space-x-2 p-8">
         {avatar && (
           <Image
             src={avatar}
