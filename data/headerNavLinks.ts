@@ -1,7 +1,7 @@
 const headerNavLinks = [
   { href: '/', title: 'Home' },
   { href: '/blog', title: 'Blog' },
-  { href: '/tags', title: 'Tags' },
+  { href: '/movie', title: 'Movie' },
   { href: '/projects', title: 'Projects' },
   { href: '/about', title: 'About' },
   { href: 'https://photo.vychod.site', title: 'Photo', external: true },
